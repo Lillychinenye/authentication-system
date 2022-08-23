@@ -1,5 +1,5 @@
-const mongoose = require (‘mongoose’);
-const UserSchema = mongoose.Schema ( 
+const mongoose = require ('mongoose');
+const userSchema = mongoose.Schema ( 
 { 
 firstName: {
 type:String,
@@ -19,7 +19,7 @@ type: String
 },
 userRole:{
 type: String,
-enum:["admin", "tutor”, “student”, ”not assigned”],
+enum:["admin", "tutor", "student", "not assigned"],
 default: "not assigned"
 },
 isTutor:{
